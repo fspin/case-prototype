@@ -21,7 +21,7 @@ var processors = [
 ];
 
 // task
-gulp.task('scss', ['dependencies'], function () {
+gulp.task('scss', [], function () {
     gulp.src(config.src)
         .pipe(sourcemaps.init())
         .pipe(sass.sync(config.settings)

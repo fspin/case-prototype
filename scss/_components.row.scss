@@ -17,3 +17,13 @@
     color: palette(color-neutral,light);
     background-color: palette(color-neutral,dark);
 }
+
+.c-row--gamma {
+    font-family: $gamma-font-family;
+    background-color: palette(color-neutral,x-light);
+
+    p {
+        max-width: 34em;
+        @include text-dimensions($gamma-font-size, $alpha-line-height);
+    }
+}

@@ -22,3 +22,9 @@
     border: $border-width $border-style palette(color-neutral,base);
     border-radius: $radius;
 }
+
+.c-card--image {
+    max-width: 50%;
+    border: $border-width $border-style palette(color-neutral,base);
+    border-radius: $radius;
+}

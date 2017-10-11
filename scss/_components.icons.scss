@@ -27,3 +27,20 @@
         background-position: center -46px;
     }
 }
+
+.c-icon--link {
+    background-image: url('../img/svg/link.svg');
+    width: 32px;
+    height: 24px;
+    background-size: cover;
+    margin-left: -5px;
+}
+
+.c-icon--external {
+    background-image: url('../img/svg/external.svg');
+    @include margin-lr(.3);
+    // width: 32px;
+    // height: 24px;
+    // background-size: cover;
+    // margin-left: -5px;
+}
