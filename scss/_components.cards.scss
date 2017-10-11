@@ -23,6 +23,40 @@
     border-radius: $radius;
 }
 
+.c-card--beta {
+    color: palette(color-neutral,dark);
+    background-color: palette(color-neutral,x-light);
+    border: $border-width $border-style palette(color-neutral,light);
+    font-weight: $beta-font-weight;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100%;
+    box-shadow: none;
+
+    transition: all .1s ease-in;
+
+    @include padding-tb(0);
+    @include padding-lr(0);
+    @include margin-lr(1);
+
+    .c-card__body {
+        @include margin-tb(.5,.5);
+        @include margin-lr(.5,.5);
+    }
+
+    .c-card__header {
+        @include aspect-ratio(16, 9);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &:hover {
+        box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.25);
+        transform: scale(1.025);
+    }
+}
+
 .c-card--image {
     max-width: 50%;
     border: $border-width $border-style palette(color-neutral,base);

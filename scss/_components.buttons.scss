@@ -38,7 +38,7 @@
     -webkit-font-smoothing: antialiased; /* [4] */
     -moz-osx-font-smoothing: grayscale; /* [4] */
 
-    &:hover,
+    &:hover,beta
     &:focus {
         text-decoration: none;
     }
@@ -122,22 +122,24 @@
 }
 
 .c-button--beta {
-    background-color: palette(color-beta);
-    border-color: palette(color-beta);
+    background-color: palette(color-neutral,light);
+    border-color: palette(color-neutral);
+    color: palette(color-neutral);
 
     &,
     &:visited {
-        color: palette(color-neutral,x-light);
+        color: palette(color-neutral);
+        background-color: palette(color-neutral, x-light);
     }
 
     &:hover,
     &:focus {
-        background-color: palette(color-beta,light);
+        background-color: palette(color-neutral, dark);
         color: palette(color-neutral,x-light);
     }
 
     &:active {
-        background-color: palette(color-beta);
+        background-color: palette(color-neutral);
     }
 }
 

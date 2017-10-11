@@ -13,3 +13,34 @@
         text-decoration: none;
     }
 }
+
+.u-link--underlined {
+    transition: all .1s ease-in;
+    background-color: palette(color-alpha, light);
+    color: white;
+    @include padding-lr(.5);
+
+    &:hover {
+        text-decoration: underline;
+        background-color: white;
+
+    }
+}
+
+.u-equal-heights {
+    display: flex;
+    justify-content: space-around;
+}
+
+.u-unchanged-link {
+    a {
+        text-decoration: none;
+        border-bottom: 0;
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: 0;
+            color: palette(color-alpha);
+        }
+    }
+}
