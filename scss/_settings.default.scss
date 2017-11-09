@@ -46,6 +46,8 @@ $color-neutral                      : #a2a3a2 !default;
 
 $color-alpha                        : #4253a4 !default;
 $color-beta                         : #41f004 !default;
+$color-gamma                        : #03e8fd !default;
+$color-delta                        : #f3fef2 !default;
 
 $color-error                        : #FF4136 !default;
 $color-success                      : #2ECC40 !default;
@@ -54,23 +56,36 @@ $color-notice                       : #FF851B !default;
 // Palettes
 $palettes: (
     color-neutral: (
-        x-light                     : hsl(hue($color-neutral),0,100),
+        xx-light                    : #fff,
+        x-light                     : #fbfbfb,
         light                       : hsl(hue($color-neutral),0,90),
         base                        : $color-neutral,
-        dark                        : hsl(hue($color-neutral),0,30),
+        dark                        : #7c7b7b,
         x-dark                      : hsl(hue($color-neutral),0,10)
     ),
     color-alpha: (
-        light                       : hsl(hue($color-alpha),70,60),
+        light                       : #a5afdf,
         base                        : $color-alpha,
         dark                        : hsl(hue($color-alpha),100,25),
-        x-dark                      : hsl(hue($color-alpha),100,15)
+        x-dark                      : #2b3d95
     ),
     color-beta: (
         light                       : hsl(hue($color-beta),70,60),
         base                        : $color-beta,
         dark                        : hsl(hue($color-beta),100,25),
         x-dark                      : hsl(hue($color-beta),100,15)
+    ),
+    color-gamma: (
+        light                       : hsl(hue($color-gamma),70,60),
+        base                        : $color-gamma,
+        dark                        : hsl(hue($color-gamma),100,25),
+        x-dark                      : hsl(hue($color-gamma),100,15)
+    ),
+    color-delta: (
+        light                       : hsl(hue($color-delta),70,60),
+        base                        : $color-delta,
+        dark                        : hsl(hue($color-delta),100,25),
+        x-dark                      : hsl(hue($color-delta),100,15)
     ),
     color-error: (
         light                       : hsl(hue($color-error),70,60),
@@ -295,9 +310,9 @@ $link-decoration                    : none !default;
 $link-decoration--hover             : underline !default;
 
 $link-color                         : palette(color-beta) !default;
-$link-color--visited                : palette(color-alpha) !default;
-$link-color--hover                  : palette(color-alpha,light) !default;
-$link-color--focus                  : palette(color-alpha,light) !default;
+$link-color--visited                : palette(color-beta, dark) !default;
+$link-color--hover                  : palette(color-beta,light) !default;
+$link-color--focus                  : palette(color-beta,light) !default;
 
 $link-outline                       : 0 !default;
 $link-outline--focus                : thin dotted !default;

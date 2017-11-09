@@ -1,8 +1,8 @@
 <div class="c-card c-card--alpha">
-  <h3>{{ include.title }}</h3>
+  <h3 class="c-card__title">{{ include.title }}</h3>
   <div class="c-card__body">
       <img src="img/png/{{ include.image }}" alt="" class="c-card__image">
-      <p>
+      <p class="u-text-center">
           {% for icon in include.icons %}
           <i class="c-icon c-icon--card c-icon--{{ icon }}"></i>
           {% endfor %}

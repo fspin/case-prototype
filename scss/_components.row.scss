@@ -10,15 +10,15 @@
 }
 
 .c-row--alpha {
-    background-color: palette(color-neutral,x-light);
+    background-color: palette(color-neutral,xx-light);
     color: palette(color-neutral);
-    @include margin-tb(3);
+    @include padding-tb(1.5,2);
 
 }
 
 .c-row--beta {
     color: palette(color-neutral,light);
-    background-color: palette(color-neutral,dark);
+    background-color: palette(color-alpha,dark);
 }
 
 .c-row--gamma {
@@ -29,6 +29,24 @@
     p {
         max-width: 34em;
         @include text-dimensions($gamma-font-size, $alpha-line-height);
+    }
+
+}
+
+.c-row--delta {
+    font-family: $alpha-font-family;
+    color: palette(color-alpha, light);
+    background-color: palette(color-delta);
+    @include padding-tb(4,2);
+
+    p {
+        max-width: 34em;
+        @include text-dimensions($gamma-font-size, $alpha-line-height);
+    }
+
+    .c-highlight {
+        color: palette(color-alpha,dark);
+
     }
 
 }

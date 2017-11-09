@@ -61,8 +61,6 @@
     top: 2rem;
     left: -2.3rem;
     transition: all .2s ease-in;
-
-
 }
 
 .c-icon--react {
@@ -74,9 +72,10 @@
     @include margin-right(.6);
 }
 
-// .c-icon--card {
-//
-// }
+.c-icon--card {
+    width: 50px;
+    height: 36px;
+}
 
 .c-icon--01 {
     background-image: url('../img/png/c-icon01.png');
@@ -84,6 +83,8 @@
 
 .c-icon--02 {
     background-image: url('../img/png/c-icon02.png');
+    width: 70px;
+
 }
 
 .c-icon--03 {

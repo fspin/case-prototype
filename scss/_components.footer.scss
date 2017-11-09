@@ -1,0 +1,17 @@
+.c-footer {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.c-footer__title {
+    text-transform: uppercase;
+    font-weight: $beta-font-weight;
+    color: palette(color-alpha);
+
+    @include text-dimensions($ms6);
+}
+
+.c-footer__highlight {
+    font-weight: $alpha-font-weight;
+    color: palette(color-beta);
+}
