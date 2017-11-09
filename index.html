@@ -8,23 +8,109 @@ section: home
     <div class="o-container">
         <section class="o-grid o-grid--gutter">
             <div class="o-grid__item">
-                <h1>Chopstick-boilerplate</h1>
-                <p class="tagline">Experimenting</p>
+                <p class="subtitle">part of D&amp;C</p>
+                <h1 class="title">React <i class="c-icon c-icon--react"></i> <span class="highlight">Gent</span></h1>
+
+                <p class="lead">I see space bearing down on us,The future is closing in. With rocket ships and laser guns, And .. music can you hear</p>
+                <p>I see space bearing down on us,The future is closing in. With rocket ships and laser guns, </p>
+
+                <a href="#sportkompas" class="">more</a>
             </div>
         </section>
     </div>
 </div>
-<hr>
-{# comment #}
-<!-- <div class="c-row c-row--alpha">
+
+<div class="c-row c-row--beta">
     <div class="o-container">
         <section class="o-grid o-grid--gutter">
             <div class="o-grid__item">
-                <h2>Oplossing 1</h2>
-                <p>Iconen naast de link + onderstrepen <em>on hover</em></p>
-                <p><a href="oplossing-1">fabian3vrt.localtunnel.me/oplossing-1</a></p>
+
+                {% assign icons = "icon01,icon02" | split: "," %}
+                {%
+                    include components.cards.html
+
+                    title='Sportkompas'
+                    image='card01.png'
+                    icons=icons
+                    body='I see space bearing down on us,
+                    <br />The future is closing in. With rocket ships and laser guns,
+                    <br />And .. music can you hear﻿'
+                    link='https://sportkompas.be'
+                    link-text='sportkompas.be'
+                %}
             </div>
         </section>
     </div>
-</div> -->
-{# endcomment #}
+</div>
+<div class="c-row c-row--beta">
+    <div class="o-container">
+        <section class="o-grid o-grid--gutter">
+            <div class="o-grid__item">
+
+                {% assign icons = "icon03,icon04,icon05,icon06,icon07" | split: "," %}
+                {%
+                    include components.cards.html
+
+                    title='Moovly'
+                    image='card02.png'
+                    icons=icons
+                    body='I see space bearing down on us,
+                    <br />The future is closing in. With rocket ships and laser guns,
+                    <br />And .. music can you hear﻿'
+                    link='https://moovly.com'
+                    link-text='moovly.com'
+                %}
+            </div>
+        </section>
+    </div>
+</div>
+<div class="c-row c-row--beta">
+    <div class="o-container">
+        <section class="o-grid o-grid--gutter">
+            <div class="o-grid__item">
+
+                {% assign icons = "icon07,icon09,icon07" | split: "," %}
+                {%
+                    include components.cards.html
+
+                    title='Niko'
+                    image='card03.png'
+                    icons=icons
+                    body='I see space bearing down on us,
+                    <br />The future is closing in. With rocket ships and laser guns,
+                    <br />And .. music can you hear﻿'
+                    link='https://niko.com'
+                    link-text='niko.com'
+                %}
+            </div>
+        </section>
+    </div>
+</div>
+<div class="c-row c-row--gamma">
+    <div class="o-container">
+        <section class="o-grid o-grid--gutter">
+            <div class="o-grid__item">
+                <p>We combineren React met lichte sojasaus, green onion en sesamolie. Deze combi resuleert in vloeiende parrallax, zowel in de browser als op de tong. </p>
+                <p>Je kan dit best ervaren door al likkend - met de tong dus- te scrollen</p>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="c-row c-row--gamma">
+    <div class="o-container">
+        <section class="o-grid o-grid--gutter">
+            <div class="o-grid__item">
+                {%
+                    include components.modal.html
+
+                    title='HOW WE  > WORK'
+                    body='I see space bearing down on us,The future is closing in
+                        <br />With rocket ships and laser guns
+                        <br />And .. music can you hear - I see space bearing down on
+                        <br />us,The future is closing in. With rocket ships and
+                        <br />laser guns, And .. music can you hear'
+                %}
+            </div>
+        </section>
+    </div>
+</div>

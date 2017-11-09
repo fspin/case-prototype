@@ -6,16 +6,16 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Meta data
-title: 'Testing Chopstick with ES6/Bootstrap'
+title: 'React Gent'
 author: 'Fabian Espinosa-Diaz'
 description: ''
 
 # Site navigation
 navigation:
-  - title: styleguide
-    url: styleguide/
-  - title: grid
-    url: grid/
+  # - title: styleguide
+  #   url: styleguide/
+  # - title: grid
+  #   url: grid/
 
 # Jekyll settings
 permalink: pretty
