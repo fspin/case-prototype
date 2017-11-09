@@ -11,7 +11,9 @@
 
 .c-row--alpha {
     background-color: palette(color-neutral,x-light);
-    color: palette(color-neutral,x-dark);
+    color: palette(color-neutral);
+    @include margin-tb(3);
+
 }
 
 .c-row--beta {

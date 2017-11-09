@@ -42,10 +42,10 @@
 }
 
 // Base colors
-$color-neutral                      : #aaa !default;
+$color-neutral                      : #a2a3a2 !default;
 
-$color-alpha                        : #0074D9 !default;
-$color-beta                         : #2ECC40 !default;
+$color-alpha                        : #4253a4 !default;
+$color-beta                         : #41f004 !default;
 
 $color-error                        : #FF4136 !default;
 $color-success                      : #2ECC40 !default;
@@ -119,8 +119,8 @@ $ms13                               : 100 !default;
 // Font settings
 // ---
 
-$alpha-font-family                  : serif !default;
-$beta-font-family                   : sans-serif !default;
+$alpha-font-family                  : 'Roboto Mono', monospace !default;
+$beta-font-family                   : 'Noto Sans', sans-serif !default;
 $gamma-font-family                  : 'Raleway', sans-serif !default;
 
 $alpha-font-size                    : $ms0 !default;
@@ -294,7 +294,7 @@ $link-transition                    : none !default;
 $link-decoration                    : none !default;
 $link-decoration--hover             : underline !default;
 
-$link-color                         : palette(color-alpha) !default;
+$link-color                         : palette(color-beta) !default;
 $link-color--visited                : palette(color-alpha) !default;
 $link-color--hover                  : palette(color-alpha,light) !default;
 $link-color--focus                  : palette(color-alpha,light) !default;

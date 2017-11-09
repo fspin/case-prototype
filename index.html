@@ -8,24 +8,33 @@ section: home
     <div class="o-container">
         <section class="o-grid o-grid--gutter">
             <div class="o-grid__item">
-                <p class="subtitle">part of D&amp;C</p>
-                <h1 class="title">React <i class="c-icon c-icon--react"></i> <span class="highlight">Gent</span></h1>
+                <div class="c-header">
+                    <p class="c-header__subtitle">part of D&amp;C</p>
+                    <h1 class="c-header__title">React <i class="c-icon c-icon--react"></i> <span class="c-header__highlight">Gent</span></h1>
 
-                <p class="lead">I see space bearing down on us,The future is closing in. With rocket ships and laser guns, And .. music can you hear</p>
-                <p>I see space bearing down on us,The future is closing in. With rocket ships and laser guns, </p>
+                    <div class="c-header__body">
+                        <p class="c-header__lead">I see space bearing down on us,The future is closing in. With rocket ships and laser guns, And .. music can you hear</p>
+                        <p>I see space bearing down on us,The future is closing in. With rocket ships and laser guns, </p>
+                    </div>
 
-                <a href="#sportkompas" class="">more</a>
+                    <div class="c-header__footer">
+                        <a href="#sportkompas" class="c-header__link">
+                            more
+                            <i class="c-icon c-icon--more"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
 </div>
 
-<div class="c-row c-row--beta">
+<div class="c-row c-row--alpha">
     <div class="o-container">
         <section class="o-grid o-grid--gutter">
             <div class="o-grid__item">
 
-                {% assign icons = "icon01,icon02" | split: "," %}
+                {% assign icons = "01,02" | split: "," %}
                 {%
                     include components.cards.html
 
@@ -40,14 +49,11 @@ section: home
                 %}
             </div>
         </section>
-    </div>
-</div>
-<div class="c-row c-row--beta">
-    <div class="o-container">
+
         <section class="o-grid o-grid--gutter">
             <div class="o-grid__item">
 
-                {% assign icons = "icon03,icon04,icon05,icon06,icon07" | split: "," %}
+                {% assign icons = "03,04,05,06,07" | split: "," %}
                 {%
                     include components.cards.html
 
@@ -62,14 +68,11 @@ section: home
                 %}
             </div>
         </section>
-    </div>
-</div>
-<div class="c-row c-row--beta">
-    <div class="o-container">
+
         <section class="o-grid o-grid--gutter">
             <div class="o-grid__item">
 
-                {% assign icons = "icon07,icon09,icon07" | split: "," %}
+                {% assign icons = "07,09,07" | split: "," %}
                 {%
                     include components.cards.html
 
